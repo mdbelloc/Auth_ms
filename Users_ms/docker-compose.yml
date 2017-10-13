@@ -1,0 +1,14 @@
+
+sa_users_db:
+  image: mysql
+  ports:
+    - "3307:3307"
+  environment:
+    MYSQL_ROOT_PASSWORD: 1234
+    MYSQL_PASSWORD: 1234
+    MYSQL_DATABASE: users
+authentication-ms:
+  build: .
+  ports:
+   - "4000:4000"
+  
